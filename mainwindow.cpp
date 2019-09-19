@@ -37,6 +37,7 @@ void MainWindow::setQSV()
     ui->ComboBox_VCodec->addItem("h264_qsv");
     ui->ComboBox_ICQ->addItem("27");
     ui->ComboBox_ICQ->addItem("33");
+    ui->ComboBox_VBitrate->addItem("--unavailable--");
     ui->ComboBox_GoP->addItem("24");
     ui->ComboBox_GoP->addItem("25");
     ui->ComboBox_GoP->addItem("30");
@@ -46,7 +47,7 @@ void MainWindow::setQSV()
     ui->ComboBox_ABitrate->addItem("128k");
     ui->ComboBox_ABitrate->addItem("192k");
     ui->ComboBox_ABitrate->addItem("384k");
-    ui->lineEdit_Destination->setText("M4V80113.mp4");
+    ui->lineEdit_Destination->setText("MP480113.mp4");
 
 }
 
@@ -59,6 +60,7 @@ void MainWindow::setX264()
     ui->ComboBox_ACodec->clear();
     ui->ComboBox_ABitrate->clear();
     ui->ComboBox_VCodec->addItem("libx264");
+    ui->ComboBox_ICQ->addItem("--unavailable--");
     ui->ComboBox_VBitrate->addItem("1000k");
     ui->ComboBox_VBitrate->addItem("1500k");
     ui->ComboBox_GoP->addItem("24");
@@ -70,7 +72,7 @@ void MainWindow::setX264()
     ui->ComboBox_ABitrate->addItem("128k");
     ui->ComboBox_ABitrate->addItem("192k");
     ui->ComboBox_ABitrate->addItem("384k");
-    ui->lineEdit_Destination->setText("M4V80113.mp4");
+    ui->lineEdit_Destination->setText("MP480113.mp4");
 
 }
 
@@ -94,7 +96,7 @@ void MainWindow::setHEVC()
     ui->ComboBox_ABitrate->addItem("128k");
     ui->ComboBox_ABitrate->addItem("192k");
     ui->ComboBox_ABitrate->addItem("384k");
-    ui->lineEdit_Destination->setText("M4V80113.mp4");
+    ui->lineEdit_Destination->setText("MP480113.mp4");
 
 }
 
@@ -109,16 +111,14 @@ void MainWindow::setVAAPI()
     ui->ComboBox_VCodec->addItem("h264_vaapi");
     ui->ComboBox_ICQ->addItem("27");
     ui->ComboBox_ICQ->addItem("33");
-    ui->ComboBox_GoP->addItem("24");
+    ui->ComboBox_VBitrate->addItem("--unavailable--");
     ui->ComboBox_GoP->addItem("25");
-    ui->ComboBox_GoP->addItem("30");
-    ui->ComboBox_GoP->addItem("60");
     ui->ComboBox_ACodec->addItem("libfdk_aac");
     ui->ComboBox_ACodec->addItem("ac3_fixed");
     ui->ComboBox_ABitrate->addItem("128k");
     ui->ComboBox_ABitrate->addItem("192k");
     ui->ComboBox_ABitrate->addItem("384k");
-    ui->lineEdit_Destination->setText("M4V80113.mp4");
+    ui->lineEdit_Destination->setText("MP480113.mp4");
 
 }
 

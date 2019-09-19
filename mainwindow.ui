@@ -78,7 +78,7 @@
          <item row="2" column="0">
           <widget class="QLabel" name="iCQLabel">
            <property name="text">
-            <string>ICQ</string>
+            <string>ICQ/CQP</string>
            </property>
           </widget>
          </item>
@@ -253,7 +253,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>24</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
